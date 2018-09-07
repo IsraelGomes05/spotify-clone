@@ -5,10 +5,21 @@
 
 /* ================================= Layout ===============================*/
 
+/*<editor-fold desc="Body">*/
+html, body, .capa{
+    height: 100%;
+}
 
+body{
+    background: url("imagens/capa.png"),
+                url("imagens/ruido.png"),
+                linear-gradient(50deg, #ff4169, #7c26f8)
+                fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*</editor-fold>*/
 
-/* ==== Barra de navegação ==== */
-
+/*<editor-fold desc="Barra Navegação">*/
 .img-logo{
     height: 40px;
     width: 132px;
@@ -19,7 +30,7 @@
 }
 
 nav.navbar-trasparente{
-    padding: 15px 0px;
+    padding: 15px 0;
     background: rgba(0, 0, 0, 0.6);
     border: none;
 }
@@ -42,5 +53,56 @@ nav.navbar-trasparente{
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #9bf0e1;
 }
+/*</editor-fold desc="Barra Navegação"> */
+
+/*<editor-fold desc="Capa">*/
+.capa{
+    display: table;
+    width: 100%;
+}
+
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Botões">*/
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    margin: 5px 15px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background-color: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+   border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+/*</editor-fold>*/
 
 /* ================================= Tipografia ===============================*/
+
+h1{
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
